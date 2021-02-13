@@ -1,0 +1,235 @@
+h1 {
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(19, 19, 19);
+}
+
+.frame {
+  background-color: #383838;
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  border: 10px solid #222222;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame2 {
+  background-image: linear-gradient(135deg, black, #72466e);
+  width: 83.33%;
+  height: 80%;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-top-left-radius: 35%;
+  border-top-right-radius: 35%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gauges{
+  width: 95%;
+  height: 80%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info{
+  width:25%;
+  height: 85%;
+  border: 1px solid #ae6ba1;
+}
+
+.left{
+  width: 18em;
+  height: 18em;
+  /* background: darkgrey; */
+  border-radius: 50%;
+  border: 2px solid #ae6ba1;
+  /* box-sizing: border-box; */
+  overflow: hidden;
+}
+
+.right{
+   width: 18em;
+  height: 18em;
+  /* background: darkgray; */
+  border-radius: 50%;
+  border: 2px solid #ae6ba1;
+  /* box-sizing: border-box; */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+ .first-indicator {
+  background-color: white;
+  margin-top: 49.5%;
+  width: 50%;
+  height: 1%;
+  position: relative;
+  right: 31%;
+  bottom: 31%;
+  transform-origin: center right;
+   transform: rotate(45deg);   
+}
+
+.second-indicator {
+    background-color: white;
+    width: 50%;
+    height: 1%;
+    position: relative; 
+     bottom: 1%; 
+    bottom: 44%;
+    transform-origin: center right;
+     transform: rotate(90deg); 
+}
+
+ .third-indicator {
+  background-color: white;
+  
+  width: 50%;
+  height: 1%;
+  position: relative;
+  bottom: 2%;
+  left: 31%;
+  bottom: 31%;
+  transform-origin: center right; 
+  transform: rotate(135deg); 
+} 
+
+.fourth-indicator {
+  background-color: white;
+  
+  width: 50%;
+  height: 1%;
+  position: relative;
+  bottom: 3%;
+  left: 45%;
+  transform-origin: center right; 
+  transform: rotate(180deg); 
+} 
+
+.fifth-indicator {
+  background-color: white;
+  width: 50%;
+  height: 1%;
+  position: relative;
+  bottom: 4%;
+  top: 28%;
+  left: 31%;
+  transform-origin: center right; 
+  transform: rotate(225deg); 
+} 
+
+.sixth-indicator {
+  display: none;
+  background-color: white;
+  
+  width: 50%;
+  height: 1%;
+  position: relative;
+  bottom: 5%;
+  top: 40%;
+  transform-origin: center right; 
+  transform: rotate(270deg); 
+  
+} 
+
+.seventh-indicator {
+  background-color: white;
+  
+  width: 50%;
+  height: 1%;
+  position: relative;
+  bottom: 6%;
+  top: 26%;
+  right: 30%;
+  transform-origin: center right; 
+  transform: rotate(315deg); 
+} 
+
+.eigth-indicator {
+  background-color: white;
+  
+  width: 50%;
+  height: 1%;
+  position: relative;
+  bottom: 7%;
+ position: relative;
+ right: 45%;
+  transform-origin: center right; 
+  transform: rotate(360deg); 
+}
+
+
+
+.leftArrow {
+  background: linear-gradient(270deg, #147ef7,  #6bbcff);
+  box-shadow: 1px 3px 6px blue;
+  border: 1px solid black;
+  width: 50%;
+  height: 2%;
+  position: relative;
+  bottom: 8.5%;
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 45%;
+  transform-origin: center right;
+  transform: rotate(-45deg);
+  transition: 1s;
+}
+
+.rotateArrow {
+  transform: rotate(135deg);
+}
+
+.leftArrow:hover {
+  transform: rotate(225deg);
+}
+
+#buttonSection {
+  margin: 10%;
+
+  height: 100px;
+
+}
+
+button.gas {
+  margin-left: 5%;
+  height: 100px;
+  width: 100px;
+}
+
+button.brake {
+  margin-left: 45%;
+  height: 100px;
+  width: 100px;
+}
+
+/* .rightArrow {
+  background-color: black;
+  width: 50%;
+  height: 2%;
+  margin-top: 50%;
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 45%;
+  transform-origin: center right;
+  transition: 1s;
+}
+
+.rightArrow:hover {
+  transform: rotate(79deg);
+}
+ */
