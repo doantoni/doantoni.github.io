@@ -38,12 +38,10 @@ body {
 }
 
 div {
-    width: 250px;
-    height: 250px;
+    width: 3em;
+    height: 3em;
     background-color: rgb(16, 73, 83);
     background-size: 100%;
-    float: left;
-    margin: 1%;
     border-radius: 5%;
     color: white;
     font-size: 100px;
@@ -62,7 +60,10 @@ h1  {
 section {
 	max-width: 70%;
 	margin: 0 auto;
-	padding-top: 2%;
+  padding-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
 }
 
 img {
