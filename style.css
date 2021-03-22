@@ -214,13 +214,13 @@ margin: auto;
     transition: 0.5s;
     margin: 2%;
     overflow: hidden;
+    
 }
 
 .box:hover {
     top: 0;
-    box-shadow: 3px 1px 6px rgb(114, 190, 235);
-    width: 400px;
-    height: 320px;
+    box-shadow: 3px 3px 6px rgb(114, 190, 235);
+    
     
 }
 
@@ -272,7 +272,17 @@ margin: auto;
     /* display: none; */
 }
 
-.box:nth-of-type(1){
+
+/* @keyframes positionSlide {
+    0% {
+      right: 250%;
+    }
+    100% {
+      right: 0%;
+    }
+  } */
+
+/* .box:nth-of-type(1){
   animation: 1.5s positionSlide;
     animation-timing-function: ease;
     
@@ -302,7 +312,7 @@ margin: auto;
   #portfolio2 .box:nth-of-type(3){
       animation: 1.125s positionSlide;
       animation-timing-function: ease-in-out; 
-  }
+  } */
 
 
 .box h1 {
@@ -414,14 +424,7 @@ main h2 {
     }
   }
 
-  @keyframes positionSlide {
-    0% {
-      right: 250%;
-    }
-    100% {
-      right: 0%;
-    }
-  }
+  
 
 
   @media (max-width: 1620px){
