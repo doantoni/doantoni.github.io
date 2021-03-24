@@ -22,6 +22,7 @@
 body {
 
         background: #2b2f3d;
+        overflow-x: hidden;
 }
 
 header {
@@ -151,8 +152,8 @@ text-shadow: 2px 2px 3px rgb(3, 30, 71);
 
 .curvature {
     position: relative;
+    bottom: 10vh;
     z-index: -1;
-    bottom: 150px;
     }
 
 .curved {
@@ -501,20 +502,9 @@ main h2 {
     }
   }
 
-  
 
 
-  @media (max-width: 1620px){
-    nav {
-        margin-bottom: 1%;
-    }
-}
-
-    @media (max-width: 1313px){
-        nav {
-            margin-bottom: 3%;
-        }
-    }
+   
 
     @media (max-width: 1170px){
         .links {
@@ -541,6 +531,11 @@ main h2 {
 
         .title h2 {
             font-size: x-large;
+            top: 4vh;
+        }
+
+        .title svg {
+            top: 8vh;
         }
 
         .box2{
@@ -564,14 +559,32 @@ main h2 {
     @media (max-width: 768px){
         .burger {
             display: flex;
+            cursor: pointer;
         }
 
         .links {
-            display: none;
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: #2b2f3d;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+            z-index: +1;
+           
         }
 
+        .links li {
+            opacity: 0;
+            transition: 0.5;
+        }
         #social {
-            width: 50%;
+            width: 40%;
         }
 
         nav {
@@ -579,14 +592,19 @@ main h2 {
         }
     }
 
+        .nav-active {
+            transform: translateX(0%);
+            overflow-y: hidden;
+        }
+
+        .links-active{
+            opacity: 1;
+            overflow: hidden;
+        } 
+
     
 
-    @media (max-width: 450px){
-        .box2{
-            height: 40px;
-            width: 40px;
-        }
-    }
+    
 
  /*  @media screen and (max-width: 600px){
       #break-at-725 {
@@ -596,83 +614,85 @@ main h2 {
 
   
 
- @media screen and (max-width: 564px){
-     .box {
-         width: 250px;
-         height: 250px;
+ @media screen and (max-width: 633px){
+    
+        #social, .lang {
+            display: none;
         }
 
-        ul {
-            justify-content: center;
+        .navigation {
+            justify-content: flex-end;
+        }
+
+        .curvature {
+            margin-top: 20%;
         }
  }
 
  @media screen and (max-width: 480px){
-    main h1 {
-        font-size: x-large;
-       }
+   .title h1 {
+       font-size: x-large;
+   }
+    .title h2 {
+        font-size: large;
+        font-weight: 400;
+    }
 
-    ul li {
+    .title svg {
+        top: 6vh;
+        width: 30px;
+    }
+
+    .box h1 {
+        font-size: x-large;
+    }
+
+    .box p {
         font-size: small;
     }
-
-    ul {
-        margin-bottom: 7%;
+    #my-projects {
+        font-size: x-large;
     }
-
-    main h2 {
-        font-size: medium;
-    }
-}
-
-@media screen and (max-width: 430px){
-    main h2 span {
-        display: block;
-    }
-}
-
- @media screen and (max-width: 362px){
-    .box {
+    .outer-box {
         width: 200px;
         height: 200px;
-       }
-}
+    }
 
-@media screen and (max-width: 290px){
-    .box {
-        width: 150px;
-        height: 150px;
-        border: 4px solid #8a2be2;
-       }
-
-    .box h1{
-        font-size:x-large;
+    .outer-box:hover {
+        width: 280px;
+        height: 210px;
     }
 }
 
-@media screen and (max-width: 246px){
-    .box {
-        width: 100px;
-        height: 100px;
-       }
-
-    .box h1{
-        font-size: large;
-    }
-}
-
-@media screen and (max-width: 165px){
-        .box {
-            width: 50px;
-            height: 50px;
-            border: 3px solid #8a2be2;
-           }
+@media screen and (max-width: 480px){
+    .title h2 {
+        top: 2vh;
+    } 
     
-        .box h1{
-            font-size: small;
-        }
-    }
+    .title svg {
+         top: 5vh;
+         width: 25px;
+     } 
 
+    .box .container button {
+         transform: scale(0.7, 0.7);
+     }
+
+     .box img {
+         width: 50%;
+     }
+
+     body {
+         overflow-x: hidden;
+     }
+
+ }
+
+ @media (max-width: 359px){
+    .box p {
+        font-size: x-small;
+    }
+}
 
     /* SVG Wheel */
 
