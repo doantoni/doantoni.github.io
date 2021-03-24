@@ -50,6 +50,14 @@ $('main button a').click(function(){
     $('html').css("scrollBehavior", "smooth");
 });
 
+$(".burger").click(function(){
+    let active = true; 
+    $(".links").toggleClass("nav-active");
+    $(".links li").css("opacity", "1");
+    $("body").toggleClass("links-active");
+    
+})
+
 //Language change
 
 /* hr.addEventListener("click", function(){
