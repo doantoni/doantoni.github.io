@@ -569,7 +569,7 @@ main h2 {
             top: 8vh;
             background-color: #2b2f3d;
             width: 100%;
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
