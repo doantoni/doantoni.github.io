@@ -52,7 +52,11 @@ $('main button a').click(function(){
 
 $(".burger").click(function(){
     let active = true; 
-    $(".links").toggleClass("nav-active");
+    $(".links").css("display", "flex");
+    function toggleNav (){
+        $(".links").toggleClass("nav-active");
+    }
+    setTimeout(toggleNav, 100);
     $(".links li").css("opacity", "1");
     $("body").toggleClass("links-active");
     
