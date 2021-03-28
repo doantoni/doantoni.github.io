@@ -620,9 +620,7 @@ main h2 {
 
  @media screen and (max-width: 633px){
     
-        #social, .lang {
-            display: none;
-        }
+        
 
         .navigation {
             justify-content: flex-end;
@@ -630,6 +628,22 @@ main h2 {
 
         .curvature {
             margin-top: 20%;
+        }
+
+        .box2 {
+            width: 30px;
+            height: 30px;
+            border-radius: 10px;
+        }
+
+        #social {
+            width: 60%;
+            justify-content: center;
+        }
+
+        .outer-second-box {
+            width: 45px;
+            height: 45px;
         }
  }
 
