@@ -79,39 +79,6 @@ nav {
     box-shadow: initial;
 }
 
-.links {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    font-family: 'Orbitron', sans-serif;
-    width: 300px;
-    font-weight: 400;
-    color: white;
-}
-
-.links li {
-    margin-left: 20%;
-}
-
- li a {
-    color: white;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-li {
-    
-    position: relative;
-    transition: 0.5s;
-    top: 0.2em
-}
-li:hover {
-    top: 0;
-}
-
-li:hover a {
-    text-shadow: 2px 5px 5px #3f75da;
-}
 
 .burger {
     display: none;
@@ -181,7 +148,8 @@ text-shadow: 2px 2px 3px rgb(3, 30, 71);
    
     border-radius: 5px;
     padding: 20px 20px;
-    
+    width: 80%;
+    margin: 5vh auto;
     font-weight: 400;
     font-size: x-large;
     text-align: center;
@@ -347,7 +315,7 @@ align-items: center;
 flex-flow: wrap;
 height: inherit;
 width: 30%;
-margin: auto;
+
 }
 
 @keyframes positionSlide {
@@ -507,10 +475,7 @@ main h2 {
    
 
     @media (max-width: 1170px){
-        .links {
-            width: 200px;
-    font-weight: 400;
-        }
+        
 
         .lang {
             width: 200px;
@@ -557,27 +522,10 @@ main h2 {
     }
 
     @media (max-width: 768px){
-        .burger {
+       /*  .burger {
             display: flex;
             cursor: pointer;
-        }
-
-        .links {
-            position: absolute;
-            right: 0px;
-            height: 92vh;
-            top: 8vh;
-            background-color: #2b2f3d;
-            width: 100%;
-            display: none;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            transform: translateY(-150%);
-            transition: transform 0.5s ease-in;
-            z-index: +1;
-           
-        }
+        } */
 
         body {
             overflow-x: hidden;
@@ -601,10 +549,6 @@ main h2 {
             overflow-y: hidden;
         }
 
-        .links-active{
-            opacity: 1;
-            overflow: hidden;
-        } 
 
     
 
@@ -709,6 +653,12 @@ main h2 {
  @media (max-width: 359px){
     .box p {
         font-size: x-small;
+    }
+}
+
+@media (max-width: 300px){
+    #social {
+        width: 100%;
     }
 }
 
