@@ -1,6 +1,9 @@
 h1 {
   color: white;
   text-align: center;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: 'Staatliches', cursive;
 }
 
 body {
@@ -188,35 +191,41 @@ body {
   border-bottom-left-radius: 45%;
   transform-origin: center right;
   transform: rotate(-45deg);
-  transition: 1s;
+  transition: 2s;
 }
 
 .rotateArrow {
-  transform: rotate(135deg);
+  transform: rotate(225deg);
 }
 
 .leftArrow:hover {
   transform: rotate(225deg);
 }
 
-#buttonSection {
-  margin: 10%;
-
-  height: 100px;
-
-}
-
-button.gas {
-  margin-left: 5%;
-  height: 100px;
+.brake-pedal {
+  display: inline-block;
   width: 100px;
+  margin-left: 2%;
+  margin-top: 10vh;
+  height: auto;
 }
 
-button.brake {
-  margin-left: 45%;
-  height: 100px;
-  width: 100px;
+.clutch-pedal {
+  display: inline-block;
+  width: 85px;
+  margin-left: 43%;
+  margin-top: 10vh;
+  height: auto;
 }
+
+.gas-pedal {
+  display: inline-block;
+  width: 72px;
+  margin-left: 2%;
+  margin-top: 10vh;
+  height: auto;
+}
+
 
 /* .rightArrow {
   background-color: black;
