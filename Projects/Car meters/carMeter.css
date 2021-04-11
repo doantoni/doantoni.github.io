@@ -1,20 +1,39 @@
 h1 {
   color: white;
   text-align: center;
-  font-size: 60px;
-  letter-spacing: 10px;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Montserrat', sans-serif;
+  width: 50%;
+  margin: 5% auto;
 }
 
 body {
   background-color: rgb(19, 19, 19);
 }
 
+.original-image {
+  margin: auto;
+  border-radius: 10px;
+  width: 60%;
+  height: 33.75%;
+  box-shadow: 0 0 1vh 5vh rgb(19, 19, 19) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.original-image img {
+  border-radius: 50px;
+  width: 95%;
+  height: auto;
+  z-index: -1;
+}
+
 .frame {
   background-color: #383838;
+ animation: slideDown 2s;
   width: 1000px;
   height: 400px;
-  margin: 0 auto;
+  margin: 5% auto;
   border: 10px solid #222222;
   border-top-left-radius: 45%;
   border-top-right-radius: 45%;
@@ -26,7 +45,8 @@ body {
 }
 
 .frame2 {
-  background-image: linear-gradient(135deg, black, #72466e);
+  background-image: linear-gradient(135deg, black, rgb(114, 70, 110));
+  animation: slideLeft 3s;
   width: 83.33%;
   height: 80%;
   margin: 0 auto;
@@ -41,7 +61,7 @@ body {
 }
 
 .gauges{
-  width: 95%;
+  width: 97%;
   height: 80%;
   margin-top: 2%;
   display: flex;
@@ -50,31 +70,162 @@ body {
 }
 
 .info{
+  animation: slideDown 3s;
   width:25%;
   height: 85%;
   border: 1px solid #ae6ba1;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .left{
+  animation: slideLeft 3s;
   width: 18em;
   height: 18em;
   /* background: darkgrey; */
   border-radius: 50%;
   border: 2px solid #ae6ba1;
   position: relative;
-  /* box-sizing: border-box; */
-  overflow: hidden;
+  box-sizing: border-box;
+  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 10s;
+  
 }
 
-.left:hover {
-  transform: rotate(3600deg)
+.red-circle-1 {
+  animation: slideLeft 3s;
+  width: 101.5%;
+  height: 101.5%;
+  /* background: darkgrey; */
+  border-radius: 50%;
+  border: 3px solid #f33535;
+  position: absolute;
+  box-sizing: border-box;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 10s;
+  clip-path: inset(30% 0px 15% 80%);
+  z-index: +1;
+  overflow: hidden;
+}
+.red-circle-2 {
+  animation: slideLeft 3s;
+  width: 96%;
+  height: 96%;
+  /* background: darkgrey; */
+  border-radius: 50%;
+  border: 3px solid #f33535;
+  position: absolute;
+  /* box-sizing: border-box; */
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 10s;
+  clip-path: inset(50% 0px 15% 80%);
+  overflow: hidden;
+}
+
+.blue-circle {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(25, 119, 226);
+  border-radius: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  clip-path: polygon(51% 0, 95% 0, 95% 50%, 50% 85%, 0 85%, 0% 60%, 0 0);
+ /*  z-index: 999; */
+}
+
+.pink-circle {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ae6ba1;
+  border-radius: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  clip-path: polygon(51% 0, 95% 0, 95% 50%, 50% 85%, 0 85%, 0% 60%, 0 0);
+}
+
+.fade-circle1 {
+  width: 63%;
+  height: 63%;
+  border: 0.4em solid rgb(224, 180, 188);
+  border-radius: 50%;
+  box-shadow: 3px 3px 20px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-circle2 {
+  width: 94%;
+  height: 94%;
+  border: 0.4em solid rgba(224, 180, 188, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-circle3 {
+  width: 94%;
+  height: 94%;
+  border: 0.4em solid rgba(224, 180, 188, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+
+}
+
+.fade-circle3 h3 {
+  width: 30%;
+  height: 30%;
+ color: white;
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ top: 40%;
+  border-radius: 50%;
+  z-index: 999;
+font-size: small;
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+}
+
+.fade-circle3 h2 {
+  width: 70%;
+  height: 70%;
+ color: rgb(255, 255, 255);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  border-radius: 50%;
+  z-index: 999;
+  background-image: radial-gradient(rgb(0, 0, 0) 25%, transparent 70%);
+font-size: xx-large;
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+
 }
 
 .right{
+  animation: slideRight 4s;
    width: 18em;
   height: 18em;
   position: relative;
@@ -90,9 +241,9 @@ body {
 }
 
 .circle {
-  height: 101%;
-  width: 101%;
-  border: 2px solid rgb(72, 89, 116);
+  height: 99%;
+  width: 99%;
+/*   border: 2px solid rgb(72, 89, 116); */
   border-radius: 50%;
  position: absolute;
   transition: 2s;
@@ -100,21 +251,12 @@ body {
 }
 
 .indicator {
-  width: 2%;
+  width: 1%;
   height: 1%;
+  border-radius: 2px;
   background-color: rgb(211, 211, 212);
   margin-top: 49.5%;
   box-shadow: 0.04em 0.06em 0.15em black;
-}
-
-.indicator-long {
-  width: 5%;
-  height: 1%;
-  background-color:rgb(197, 199, 201);
-  position: relative;
-  bottom: 1%;
-  margin-top: 50.5%;
-  box-shadow: 0.05em 0.1em 0.2em black;
   color: white;
   font-family: 'Staatliches', cursive;
   font-size: large;
@@ -123,43 +265,64 @@ body {
   align-items: center;
 }
 
-.indicator-long p {
-  margin-left: 150%;
-  font-size: x-large;
-  font-weight: 400;
-  text-shadow: 3px 3px 5px #000000;
+.indicator-long {
+  width: 5%;
+  height: 1%;
+  border-radius: 2px;
+  background-color:rgb(197, 199, 201);
+  position: relative;
+  bottom: 1%;
+  margin-top: 50.5%;
+  box-shadow: 0.05em 0.1em 0.2em black;
+  color: white;
+  font-family: 'Staatliches', cursive;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 
+.left p, .right p {
+  margin-left: 250%;
+font-weight: 700;
+text-shadow: 3px 3px 5px #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+
+
 .leftArrow {
-  background: linear-gradient(270deg, #147ef7,  #6bbcff);
-  box-shadow: 1px 3px 6px blue;
+  background: linear-gradient(315deg, rgb(7, 38, 85),  #addaff);
+  box-shadow: 2px 6px 5px rgb(35, 111, 252);
   border: 1px solid black;
   width: 50%;
   height: 2%;
-  border-top-left-radius: 45%;
-  border-bottom-left-radius: 45%;
+  transform: rotate(-45deg);
   transform-origin: center right;
  /*  transform: rotate(-45deg); */
-  transition: 2s;
-  position: relative;
-  right: 25%;
+ 
+  position: absolute;
+  right: 50%;
   z-index: +1;
+  transition: 2s;
 }
 
 .rotateArrow {
   transform: rotate(225deg);
 }
 
-.leftArrow:hover {
-  transform: rotate(225deg);
+.pedals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .brake-pedal {
   display: inline-block;
   width: 100px;
   margin-left: 2%;
-  margin-top: 10vh;
+  
   height: auto;
   transform-origin: center top;
 }
@@ -171,8 +334,7 @@ body {
 .clutch-pedal {
   display: inline-block;
   width: 85px;
-  margin-left: 43%;
-  margin-top: 10vh;
+  
   height: auto;
   transform-origin: center top;
 }
@@ -185,7 +347,7 @@ body {
   display: inline-block;
   width: 72px;
   margin-left: 2%;
-  margin-top: 10vh;
+ 
   height: auto;
   transform-origin: center bottom;
 }
@@ -210,3 +372,62 @@ body {
   transform: rotate(79deg);
 }
  */
+
+ @keyframes stretch {
+   from {
+     width: 20%;
+     height: 40%;
+   }
+
+   to {
+     width: 83.33%;
+     height: 80%;
+   }
+ }
+
+ @keyframes frame {
+   from {
+     width: 500px;
+     height: 200px
+   }
+   to {
+     width: 1000px;
+     height: 400px;
+   }
+ }
+
+ @keyframes slideLeft {
+   from {
+     transform: translate(-200vh);
+   }
+   to {
+     transform: translate(0vh);
+   }
+ }
+
+ @keyframes slideRight {
+  from {
+    transform: translate(200vh);
+  }
+  to {
+    transform: translate(0vh);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-200vh);
+  }
+  to {
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(200vh);
+  }
+  to {
+    transform: translateY(0vh);
+  }
+}
