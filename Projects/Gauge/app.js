@@ -41,7 +41,7 @@ for(let i=1; i<=40; i++){
     circle.addEventListener("click", function(){
         h1.textContent = "We create circle divs in JS and one marking on each one";
         setTimeout(function(){
-            h1.textContent = "Then we rotate each circle according to the degree we want each marking to be";
+            h1.textContent = "Then we rotate each circle according to the degree we want each marking to be at";
         }, 4000);
 
         if (i< 4){
