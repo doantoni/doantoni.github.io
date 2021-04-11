@@ -1,0 +1,15 @@
+- create an h1 with the text "here's how to create a gauge with divs, without svg..."
+
+- animation with every marking appearing consecutively
+
+- then an arrow appears
+
+- then another h1 appears that says "and to make it interactive, here's a slider input that shows the degrees..."
+
+- then input with slider appears
+
+- after that another h1 apears that says "and to recreate an actual gauge from a car (new VW Tiguan) that looks like this", an image appears
+
+- h1 continues... "we can do this..."
+
+- an animation with the full car gauge appears

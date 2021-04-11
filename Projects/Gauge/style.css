@@ -1,0 +1,113 @@
+body {
+    background: rgb(44, 41, 41);
+}
+
+h1 {
+    width: 40%;
+    margin: 5% auto;
+    text-align: center;
+    color: white;
+  
+    animation: 1s slideFromUp;
+    transition: 1s;
+    font-family: 'Montserrat', sans-serif;
+}
+.circle-div {
+    width: 25em;
+    height: 25em;
+    border: 3px solid rgb(139, 159, 190);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circles {
+    height: 80%;
+    width: 80%;
+    border: 1px solid rgb(139, 159, 190);
+    border-radius: 50%;
+    position: absolute;
+    transition: 1s;
+}
+
+.circles-no-border {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    position: absolute;
+    transition: 1s;
+}
+
+.marking {
+    width: 2%;
+    height: 1%;
+    background-color: rgb(139, 159, 190);
+    margin-top: 49.5%;
+    box-shadow: 0.04em 0.06em 0.15em black;
+}
+
+.marking-long {
+    width: 5%;
+    height: 1%;
+    background-color:rgb(139, 159, 190);
+    position: relative;
+    margin-top: 49.5%;
+    box-shadow: 0.05em 0.1em 0.2em black;
+}
+
+.arrow {
+        background: linear-gradient(270deg, #147ef7,  #6bbcff);
+        box-shadow: 1px 3px 6px blue;
+        border: 1px solid black;
+        width: 50%;
+        height: 2%;
+        border-top-left-radius: 45%;
+        border-bottom-left-radius: 45%;
+        transform-origin: center right;
+       /*  transform: rotate(-45deg); */
+        position: relative;
+        right: 25%;
+        transition: 1s;
+        z-index: +1;
+        transform: translate(-110%);
+}
+
+.input {
+    width: 25em;
+    display: flex;
+    justify-content: center;
+   margin: 2% auto;
+   transform: translateY(-200vh);
+   transition: 1s;
+}
+
+input:nth-of-type(2){
+    width: 20%;
+    text-align: center;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+p {
+    margin: 2% auto;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+
+
+@keyframes slideFromUp {
+    0%{
+        transform: translateY(-50vh)
+    }
+    100% {
+        transform: translateY(0vh);
+    }
+}
