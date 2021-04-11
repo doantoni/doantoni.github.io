@@ -168,11 +168,11 @@ text-shadow: 2px 2px 3px rgb(3, 30, 71);
 
 .main-page {
     display: flex;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
 flex-flow: wrap;
 height: auto;
-width: 75%;
+width: 70%;
 margin: auto;
 
 }
