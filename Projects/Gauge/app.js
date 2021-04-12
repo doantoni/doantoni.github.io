@@ -1,5 +1,6 @@
 const circle = document.querySelector(".circle-div");
 const h1 = document.querySelector("h1");
+const button = document.querySelector(".container")
 let divs = [];
 let multiplier = 0;
 
@@ -95,8 +96,11 @@ for(let i=1; i<=40; i++){
 
     setTimeout(function (){
         h1.style.color = "transparent";
-       
     }, 14000);
+
+    setTimeout(function (){
+        button.style.transform = "translateX(0vh)";
+    }, 14500);
     })     
  }
 
@@ -111,5 +115,6 @@ for(let i=1; i<=40; i++){
   firstInput.value = 0;
   
   firstInput.addEventListener("click", function(){
-        document.querySelector("p").style.display = "block";
+        document.querySelector("p").style.transition = "1s";
+        document.querySelector("p").style.opacity = "1";
   })

@@ -81,7 +81,7 @@ $(".burger").click(function(){
     boxh1[6].textContent = "Foto rešetka";
     aboutText1.textContent = "Kao što vidite, ovi projekti su podijeljeni u dvije sekcije";
     aboutText2.textContent = "Prva sekcija uključuje moje originalne projekte, dok druga sekcija uključuje projekte sa Web Dev Bootcampa uz moju malu doradu";
-    aboutText3.textContent = "Svjestan sam da su neki od ovih projekta iznimno jendostavni, početnički projekti, ali sam ih svejedno uključio";
+    aboutText3.textContent = "Svjestan sam da su neki od ovih projekta iznimno jednostavni, početnički projekti, ali sam ih svejedno uključio";
     buttonText.textContent = "Nazad na vrh";
     $(".box .container button a").text("Posjetite");
 }) 
