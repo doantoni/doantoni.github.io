@@ -72,16 +72,20 @@ $(".burger").click(function(){
  hr.addEventListener("click", function(){
     titleh1.textContent = "Dobrodošli u moj web dev portfolio!";
     titleh2.textContent = "Niže su neki moji prijašnji projekti";
-    boxh1[0].textContent = "Mjerač";
-    boxh1[1].textContent = "Brzinomjer";
-    boxh1[2].textContent = "Memory";
-    boxh1[3].textContent = "Semafor";
-    boxh1[4].textContent = "Pogodi boju";
-    boxh1[5].textContent = "Foto galerija";
-    boxh1[6].textContent = "Foto rešetka";
+    boxh1[0].textContent = "CroAdria";
+    boxh1[1].textContent = "Netflix klon";
+    boxh1[2].textContent = "Planer";
+    boxh1[3].textContent = "Mjerač";
+    boxh1[4].textContent = "Brzinomjer";
+    boxh1[5].textContent = "Memory";
+    boxh1[6].textContent = "Semafor";
+    boxh1[7].textContent = "Pogodi boju";
+    boxh1[8].textContent = "Foto galerija";
+    boxh1[9].textContent = "Foto rešetka";
+    
     aboutText1.textContent = "Kao što vidite, ovi projekti su podijeljeni u dvije sekcije";
     aboutText2.textContent = "Prva sekcija uključuje moje originalne projekte, dok druga sekcija uključuje projekte sa Web Dev Bootcampa uz moju malu doradu";
-    aboutText3.textContent = "Svjestan sam da su neki od ovih projekta iznimno jednostavni, početnički projekti, ali sam ih svejedno uključio";
+    aboutText3.textContent = "Neki od ovih projekata su iznimno jednostavni početnički projekti sa početka Bootcampa";
     buttonText.textContent = "Nazad na vrh";
     $(".box .container button a").text("Posjetite");
 }) 
@@ -89,16 +93,20 @@ $(".burger").click(function(){
 en.addEventListener("click", function(){
     titleh1.textContent = "Welcome to my web dev portfolio!"
     titleh2.textContent = "Scroll down to see my past projects";
-    boxh1[0].textContent = "Gauge";
-    boxh1[1].textContent = "Speedometer";
-    boxh1[2].textContent = "Memory Game";
-    boxh1[3].textContent = "Score Keeper";
-    boxh1[4].textContent = "Color Game";
-    boxh1[5].textContent = "Photo Gallery";
-    boxh1[6].textContent = "Photo Grid";
+    boxh1[0].textContent = "CroAdria";
+    boxh1[1].textContent = "Netflix Clone";
+    boxh1[2].textContent = "Task Tracker";
+    boxh1[3].textContent = "Gauge";
+    boxh1[4].textContent = "Speedometer";
+    boxh1[5].textContent = "Memory Game";
+    boxh1[6].textContent = "Score Keeper";
+    boxh1[7].textContent = "Color Game";
+    boxh1[8].textContent = "Photo Gallery";
+    boxh1[9].textContent = "Photo Grid";
+
     aboutText1.textContent = "As you can see, these projects are separated into two sections";
     aboutText2.textContent = "The first section includes my original projects, and the second section includes projects from the Web Dev Bootcamp with minor changes made by me";
-    aboutText3.textContent = "I realize that some of these are extremely simple beginner projects but I included them anyway";
+    aboutText3.textContent = "Some of these projects are extremely simple beginner projects from the beginning of the bootcamp";
     buttonText.textContent = "Back to top";
     $(".box .container button a").text("Visit");
 })
